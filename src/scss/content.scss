@@ -1,0 +1,93 @@
+.content{
+    padding: 10px;
+    position: relative;
+    table{
+        width: 100%;
+        background-color: #fff;
+        border-collapse: collapse;
+        .material-icons{
+            color: #fbe735;
+        }
+        th{
+            border: 1px solid grey;
+        }
+        thead th{
+            padding: 15px 10px;
+            color:grey;
+            font-size: 20px;
+        }
+        tbody th{
+            color:black;
+            padding: 30px 15px;
+        }
+    }
+    .Errors, .chooseItem{
+        position: absolute;
+        width: 589px;
+        background-color: #fff;
+        color: black;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        padding: 50px 0 25px;
+        display: none;
+        .error-info{
+            color: #5a5959;
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 28px;
+        }
+        .btn-error{
+            outline: none;
+            color: #fff;
+            background-color: #2196F3;
+            font-size: 32px;
+            padding: 10px 34px;
+            border-radius: 5px;
+            margin-top: 43px;
+            border: 2px solid grey;
+        }
+    }
+    .Errors-block , .chooseblock{
+        display: block;
+    }
+    .chooseItem{
+        display: block;
+        img{
+            width: 150px;
+        }
+        .chooseItem-btn{
+            display: inline-flex;
+            justify-content: space-around;
+            .cansel{
+                background-color: red;
+                border:none;
+            }
+            .ok{
+                margin-left:20px;
+            }
+        }
+        .chooseItem-btn button{
+            outline: none;
+            color: #fff;
+            background-color: #2196F3;
+            font-size: 32px;
+            padding: 10px 34px;
+            border-radius: 5px;
+            margin-top: 43px;
+            border: 2px solid grey;
+        }
+        .choose-item-price{
+            color: grey;
+            font-size: 22px;
+        }
+    }
+    .info{
+        color: #5a5959;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 28px;
+    }
+
+}

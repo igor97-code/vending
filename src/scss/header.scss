@@ -1,0 +1,87 @@
+.Header{
+    padding:15px 0;
+    border-bottom: 1px solid #fff;
+    .Header-btn{
+        .cash{
+            display: flex;
+            align-items: center;
+            font-size: 21px;
+            height:40px;
+            padding: 8px;
+            background-color: #5f5e5e;
+            
+        }
+        .rate-cash{
+            background-color: #FFC107;
+            width: 98px;
+            height: 40px;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+            .rate-popup{
+                position: absolute;
+                width: 100%;
+                top: 100%;
+                background-color: #FFC107;
+                overflow: hidden;
+                height: 0;
+                z-index: 2;
+                div{
+                    padding:5px;
+                    &:hover{
+                        background-color: grey;
+                    }
+                }
+                &.show{
+                    height:auto;
+                }
+            }
+            span{ 
+                &.open{
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        input{
+            height: 40px;
+            border-width: 0;
+            padding-left:10px;
+            font-size: 18px;
+        }
+        .insert-cash{
+            margin-left: 8px;
+        }
+        .cash-add-off{
+            margin-left:10px;
+            button{
+                border: none;
+                outline: none;
+                font-size:18px;
+                padding:8px;
+                color:#fff;
+                border-radius: 3px;
+                display: inline-flex;
+                cursor: pointer;
+            }
+            .btn-add{
+                background-color: green;
+            }
+            .btn-off{
+                background-color: red;
+                margin-left:4px;
+            }
+
+        }
+    }
+    &_title{
+        font-size:36px;
+        .material-icons{
+            font-size:36px;
+        }
+    }
+    
+    
+}
